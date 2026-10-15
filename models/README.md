@@ -1,0 +1,3 @@
+The included `yolov8n.pt` is the baseline Ultralytics YOLOv8 model. Place another trusted `.pt` model here to use it, or upload one from the UI. At startup the simulator selects the first model alphabetically; an upload becomes the active model for the current server session.
+
+Standard COCO YOLOv8 weights recognize people, dogs, cats, cars and traffic lights. They do not natively classify red versus green lights, crosswalks, or traffic cones. The simulator estimates light color from pixels inside detected traffic-light boxes. For crosswalk and cone detections, train a custom model with class names such as `crosswalk`/`faixa de pedestres` and `traffic cone`/`obstacle`. A crosswalk alone does not cause a stop; an occupied crossing or a detected hazard does.
